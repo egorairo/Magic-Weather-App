@@ -1,0 +1,90 @@
+.search {
+    background-color: #110f1d;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    background: -webkit-linear-gradient(#a5b4fc, #ddd6fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.searchButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border: none;
+  color: white;
+  --tw-bg-opacity: 1;
+  background-color: rgba(167,139,250,var(--tw-bg-opacity));
+}
+
+.mb6 {
+  margin-bottom: 1.5rem;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+}
+
+.searchClose {
+  position: absolute;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  right: 1rem;
+  top: 1rem;
+  background-color: transparent;
+  padding: 0;
+}
+
+.materialIcons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.searchModalLoading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 24rem;
+  transition-duration: .15s;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.loadingIcon {
+  animation: spin 1s linear infinite;
+  margin-right: 0.5rem;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
