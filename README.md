@@ -6,8 +6,10 @@ Magic-Weather-App - it's a weather application, that display you location foreca
 
 ## How to run the project
 
-1. `git clone https://github.com/egorairo/jobster-web.git`
+2. `git clone https://github.com/egorairo/jobster-web.git`
 
-2. `npm i`
+3. `npm i`
 
-3. `npm run dev`
+3. You need to go to [cors-anywhere](https://cors-anywhere.herokuapp.com/corsdemo) and click on the button 'Request temporary access to the demo server'. It's necessary for the app)
+
+4. `npm run dev`
