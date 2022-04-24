@@ -68,7 +68,7 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 24rem;
+  margin-top: 6rem;
   transition-duration: .15s;
   transition-timing-function: cubic-bezier(.4, 0, .2, 1);
   font-size: 1.25rem;
