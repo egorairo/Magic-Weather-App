@@ -8,6 +8,6 @@ Magic-Weather-App - it's a weather application, that display you location foreca
 
 1. `git clone https://github.com/egorairo/jobster-web.git`
 
-2. `cd weather-app`
+2. `npm i`
 
 3. `npm run dev`
