@@ -2,7 +2,7 @@
 
 Magic-Weather-App - it's a weather application, that display you location forecast with highlights and next 5-day forecast.
 
-[View a demo](https://jobster-web.netlify.app/)
+[View a demo](https://magic-weather-app.netlify.app/)
 
 ## How to run the project
 
