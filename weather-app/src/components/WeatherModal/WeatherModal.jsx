@@ -1,78 +1,16 @@
-import React, {useState, useCallback} from 'react';
-import axios from 'axios';
+import React from 'react';
 import Modal from 'react-modal';
 
-import WeatherSection from '../WeatherSection/WeatherSection';
+import {SearchWeatherForm} from 'entities/weather';
 
 import s from './WeatherModal.module.css';
 
-export default function WeatherModal({isShow, onClose, today}) {
-  const [location, setLocation] = useState('');
-  const [weatherModal, setWeatherModal] = useState([]);
-  const [loaded, setLoaded] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState(null);
-
-  const api = () => {
-    return axios.create({
-      baseURL:
-        'https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/',
-    });
-  };
-
-  async function fetchLocations(location) {
-    try {
-      const {data} = await api().get(`location/search/?query=${location}`);
-
-      return data.length > 0 ? data : null;
-    } catch (error) {
-      setError(error);
-    }
-  }
-
-  async function fetchLocationWeatherById(id) {
-    const {data} = await api().get(`location/${id}/`);
-
-    return data;
-  }
-
-  async function fetchWeather(location) {
-    try {
-      const locations = await fetchLocations(location);
-
-      if (locations) {
-        const weatherModal = await fetchLocationWeatherById(locations[0].woeid);
-
-        return weatherModal;
-      }
-
-      return null;
-    } catch (error) {
-      setError(error);
-    }
-  }
-
-  const handleClick = useCallback(async (event) => {
-    event.preventDefault();
-
-    setIsLoading(true);
-
-    const locationWeather = await fetchWeather(location.location);
-
-    setWeatherModal(locationWeather);
-    setIsLoading(false);
-    setLoaded(true);
-
-    if (weatherModal) {
-      onClose();
-    }
-  });
-
+export default function WeatherModal({isShown, onClose}) {
   return (
     <div>
       <>
         <Modal
-          isOpen={isShow}
+          isOpen={isShown}
           onRequestClose={onClose}
           ariaHideApp={false}
           style={{
@@ -95,45 +33,11 @@ export default function WeatherModal({isShow, onClose, today}) {
           </button>
           <div className={s.searchModal}>
             <h2 className={s.mb6}>
-              <span className={s.title}>Magic weatherModal</span>
+              <span className={s.title}>Magic Weather</span>
             </h2>
-            <form onSubmit={handleClick}>
-              <input
-                type="text"
-                name="location"
-                placeholder="City"
-                onChange={(e) =>
-                  setLocation((prevValue) => ({
-                    ...prevValue,
-                    location: e.target.value,
-                  }))
-                }
-              ></input>
-              <button
-                className={s.searchButton}
-                type="submit"
-                onClick={handleClick}
-              >
-                Search
-              </button>
-              {isLoading && (
-                <p className={s.searchModalLoading}>
-                  <span className={`${s.loadingIcon} ${s.materialIcons}`}>
-                    explore
-                  </span>
-                  Loading
-                </p>
-              )}
-              {error && <p>Error: {error}</p>}
-              {loaded && !weatherModal && (
-                <p className={s.searchModalLoading}>Not found, try again</p>
-              )}
-            </form>
+            <SearchWeatherForm onWeather={onClose} />
           </div>
         </Modal>
-        {loaded && weatherModal && (
-          <WeatherSection weatherModal={weatherModal} />
-        )}
       </>
     </div>
   );

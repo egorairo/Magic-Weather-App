@@ -1,90 +1,91 @@
+
 .sidebarWeather {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    flex-direction: column;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 25vw;
-    z-index: 1;
-    background-color: #1f233b;
-    --tw-text-opacity: 1;
-    color: rgba(243,244,246,var(--tw-text-opacity));  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 25vw;
+  z-index: 1;
+  background-color: #1f233b;
+  --tw-text-opacity: 1;
+  color: rgba(243,244,246,var(--tw-text-opacity));  
 }
 
 .cloud1 {
-    position: absolute;
-    top: -10px;
-    left: 0;
-    font-size: 120px;
-    line-height: 1;
-    opacity: .1;
-    color: white;
-    transform: scale(1.1) rotate(-6deg);
-    z-index: 10;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  font-size: 120px;
+  line-height: 1;
+  opacity: .1;
+  color: white;
+  transform: scale(1.1) rotate(-6deg);
+  z-index: 10;
 
 }
 
 .cloud2 {
-    position: absolute;
-    top: 5px;
-    right: -0.25rem;
-    font-size: 120px;
-    line-height: 1;
-    opacity: .1;
-    color: white;
-    transform: scale(.75) rotate(6deg);
-    z-index: 10;
+  position: absolute;
+  top: 5px;
+  right: -0.25rem;
+  font-size: 120px;
+  line-height: 1;
+  opacity: .1;
+  color: white;
+  transform: scale(.75) rotate(6deg);
+  z-index: 10;
 }
 
 .materialIcons {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    letter-spacing: normal;
-    text-transform: none;
-    display: inline-block;
-    white-space: nowrap;
-    word-wrap: normal;
-    direction: ltr;
-    -webkit-font-feature-settings: 'liga';
-    -webkit-font-smoothing: antialiased;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
   }
 
 .weatherImg {
-    display: block;
-    vertical-align: middle;
-    margin-bottom: 10vh;
-    width: 65%;
-    max-width: 100%;
+  display: block;
+  vertical-align: middle;
+  margin-bottom: 10vh;
+  width: 65%;
+  max-width: 100%;
 }
   
 .weatherTemperature {
-    font-weight: 300;
-    font-size: 6rem;
-    line-height: 1;
-    margin-bottom: 1rem;
+  font-weight: 300;
+  font-size: 6rem;
+  line-height: 1;
+  margin-bottom: 1rem;
 }
 
 .weatherState {
-    margin-bottom: 15vh;
-    font-size: 1.5rem;
-    line-height: 2rem;
+  margin-bottom: 15vh;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .weatherDate {
-margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .mr {
-    margin-right: 0.5rem;
-    font-size: 24px;
+  margin-right: 0.5rem;
+  font-size: 24px;
 }
 
 .location {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

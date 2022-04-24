@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom';
 
 import './index.css';
 
-import Weather from './components/Weather/Weather';
+import App from './App';
 
-ReactDOM.render(<Weather />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));

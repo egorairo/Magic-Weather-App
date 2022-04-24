@@ -8,16 +8,15 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 h2 {
-    margin-bottom: 25px;
-    font-size: 36px;
-    line-height: 40px;
-    font-weight: 200;
-    text-align: center;
+  margin-bottom: 25px;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 200;
+  text-align: center;
 }
 
 form {
@@ -44,7 +43,7 @@ input {
 
 button {
   --tw-text-opacity: 1;
-    color: rgba(255,255,255,var(--tw-text-opacity));
+  color: rgba(255,255,255,var(--tw-text-opacity));
   font-weight: 200;
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -57,6 +56,10 @@ blockquote, dd, dl, figure, h1, h2, h3, h4, h5, h6, hr, p, pre {
   margin: 0;
   font-weight: 200;
   color: #f3f4f6;
+}
+
+#root {
+  display: flex;
 }
 
 .materialIcons {

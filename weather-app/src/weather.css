@@ -1,17 +1,17 @@
 .search {
-    background-color: #110f1d;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  background-color: #110f1d;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .title {
-    background: -webkit-linear-gradient(#a5b4fc, #ddd6fe);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(#a5b4fc, #ddd6fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .searchButton {
