@@ -9,10 +9,10 @@ export default function Weather() {
   const navigate = useNavigate();
 
   const weather = useSelector((state) => state.weather);
-  console.log(weather);
 
   useEffect(() => {
     if (!weather.title) {
+      console.log('work');
       navigate('/');
     }
   }, []);
