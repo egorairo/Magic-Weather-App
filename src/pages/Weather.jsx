@@ -12,6 +12,7 @@ export default function Weather() {
   console.log(weather);
 
   useEffect(() => {
+    console.log(weather);
     if (!weather.title) {
       console.log('work');
       navigate('/');
