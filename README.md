@@ -8,7 +8,7 @@ Before view a demo and run the project you need to go to the [cors-anywhere](htt
 
 ## How to run the project
 
-1. `git clone https://github.com/egorairo/jobster-web.git`
+1. `git clone https://github.com/egorairo/Magic-Weather-App.git`
 
 2. `npm i`
 
