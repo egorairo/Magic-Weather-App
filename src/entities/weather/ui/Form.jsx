@@ -20,6 +20,8 @@ export default function Form({onWeather}) {
     async (event) => {
       try {
         event.preventDefault();
+
+        setLoaded(false);
         setIsLoading(true);
 
         const weather = await fetchWeather(location);
