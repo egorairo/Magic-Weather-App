@@ -10,6 +10,8 @@ Before view a demo and run the project you need to go to the [cors-anywhere](htt
 
 1. `git clone https://github.com/egorairo/Magic-Weather-App.git`
 
+2. `cd Magic-Weather-App`
+
 2. `npm i`
 
 3. `npm run dev`
